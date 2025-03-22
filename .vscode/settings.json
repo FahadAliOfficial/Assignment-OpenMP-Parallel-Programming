@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "matrix-multiplication-static-openmp": "cpp"
+        "matrix-multiplication-static-openmp": "cpp",
+        "omp.h": "c"
     }
 }

@@ -4,7 +4,7 @@
 #include <omp.h>
 
 #define N 500  // Matrix size
-#define NUM_THREADS 4  // Adjust based on CPU cores
+#define NUM_THREADS 12  // Adjust based on CPU cores
 
 void multiply_matrices_parallel(int A[N][N], int B[N][N], int C[N][N]) {
     #pragma omp parallel for num_threads(NUM_THREADS)
@@ -17,7 +17,6 @@ void multiply_matrices_parallel(int A[N][N], int B[N][N], int C[N][N]) {
         }
     }
 }
-
 double get_parallel_execution_time() {
     int A[N][N], B[N][N], C[N][N];
 
